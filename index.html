@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jsResume.js"></script>
+</head>
+<body>
+    <div class="gridContainer">
+        <div class="item1">
+            <!------- personal Info -------->
+            <img src="profilePic.png" alt="my picture" class="profilePic"><br>
+            Minoo Hamissi<br>
+            <img src="emailIcon.png" alt="email icon" id="icon"> 
+            <a href="mailto:hamissi.minoo@gmail.com" class="ahover">
+                hamissi.minoo@gmail.com<span>send me an email :)</span></a><br>
+            <img src="phoneIcon.png" alt="phone icon" id="icon">
+            <a href="tell:+13433646162" class="ahover">
+                +13433646162<span>call me :)</span></a><br>
+        </div>
+        <div class="item2">
+            <!----------- Experience ------------>
+            <h1>Experience</h1>
+            <h2>software developer</h2>
+            <h3>QIAU, Mechatronic Research Lab(MRL)</h3>
+            <img src="locationIcon.png" alt="location icon" id="icon"> Qazvin <br>
+            <img src="dateIcon.png" alt="dateIcon" id="icon">
+            Date: Sep. 2012 - Sep. 2016<br>
+            <hr id="hrDashed">
+            <h2>Lecturer</h2>
+            <h3>Parsian Istitute Of hier Education</h3>
+            <img src="locationIcon.png" alt="location icon" id="icon"> Qazvin <br>
+            <img src="dateIcon.png" alt="dateIcon" id="icon">
+            Date:Oct. 2013 - July 2017
+               <!-----------new Experience ------------>
+            <p id="demoExp"></p>
+            <p id="addExperience" class="forms">
+                <input type="text" id="title" value="title">
+                <input type="text" id="companyName" value="company name">
+                <input type="text" id="locationExp" value="location"><br>
+                <label for="satartDateExp">Date: </label>
+                <input type="date" id="startDateExp">
+                <input type="date" id="endDateExp">
+                <button type="button" onclick="addNewExp()">add</button>
+            </p>
+        </div>
+        <div class="item3">
+            <!----------- Skills ------------------>
+            <h1>Skills</h1>
+            <span class="borderedTxt">C++</span><br>
+            <span class="borderedTxt">Html</span>
+            <span class="borderedTxt">CSS</span> 
+            <span class="borderedTxt">PHP</span><br>
+            <span class="borderedTxt">VHDL</span><br>
+                <!-----------Add New Skills ------------------>
+            <span id="demoSkill"></span>
+            <p class="forms">     
+                <input type="text" id="newSkill" name="newSkill" value="add your new skill">
+                <button type="button" onclick="addNewSkill()">add</button>
+            </p>
+        </div>
+        <div class="item4">
+            <!----------- Education ------------------>
+            <h1>Education</h1>
+            <h2>Msc. in Artificial Intelligence</h2>
+            <h3>QIAU, Qazvin Univercity, Iran</h3>
+            <img src="locationIcon.png" alt="location icon" id="icon"> Qazvin<br>
+            <img src="dateIcon.png" alt="dateIcon" id="icon">
+            Date: Sep. 2010 - Jan. 2014   
+                <!-----------add Education ------------------>
+            <span id="demoEducation"></span>
+            <p id="addEducation" class="forms"> 
+               <input type="text" id="uniName" value="University Name"> 
+               <input type="text" id="location" value="location">
+               <input type="text" id="major" value="major">
+               <select id="level">
+                   <option value="bachlor">Bachlor</option>
+                   <option value="master">Master</option>
+                   <option value="doctorate">doctorate</option>
+               </select>
+               <br>
+               <label for="date" >Date: </label>
+               <input type="date" id="startDate"> - 
+               <input type="date" id="endDate"><br>
+               <button type="button" onclick="addEducation()">add</button>
+            </p>
+        </div>
+        <div class="item5">
+            <!----------- Publications ------------------>
+            <h1>Publications</h1>
+            <ul>
+                <li>
+                    Hamissi, Minoo, and Karim Faez. “Real-time hand gesture recognition
+                    based on the depth map for humanrobotic interaction”/ International
+                    Journal of Electrical and Computer Engineering 3, no.6 (2013): 770.
+                </li>   
+            </ul>
+                  <!-----------add new Publications ------------------>
+            <span id="demoPublication"></span>
+            <p class="forms">
+                <textarea id="newPub" style="width: 95%; resize: none;" >add yor new publication here...</textarea>
+                <button type="button" onclick="addNewPub()">add</button>
+            </p>  
+        </div>
+    </div>
+</body>
+</html>
